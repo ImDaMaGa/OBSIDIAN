@@ -1,0 +1,14 @@
+views:
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.folder == "Videogames"
+        - "!banner.isEmpty()"
+    order:
+      - file.name
+      - genre
+    image: note.cover
+    cardSize: 270
+    imageFit: contain
+    imageAspectRatio: 1
